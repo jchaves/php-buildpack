@@ -1,7 +1,7 @@
 {
     "STACK": "trusty",
     "LIBDIR": "lib",
-    "WEBDIR": "htdocs",
+    "WEBDIR": "htdocs/web/html",
     "WEB_SERVER": "httpd",
     "PHP_VM": "php",
     "ADMIN_EMAIL": "admin@localhost",
@@ -24,14 +24,14 @@
     "HHVM_STRIP": true,
     "PHP_54_LATEST": "5.4.45",
     "PHP_55_LATEST": "5.5.29",
-    "PHP_56_LATEST": "5.6.13",
-    "PHP_VERSION": "{PHP_55_LATEST}",
+    "PHP_56_LATEST": "5.6.8",
+    "PHP_VERSION": "{PHP_56_LATEST}",
     "PHP_PACKAGE": "php-{PHP_VERSION}.tar.gz",
     "PHP_DOWNLOAD_URL": "/php/{PHP_VERSION}/{PHP_PACKAGE}",
     "PHP_STRIP": true,
     "PHP_MODULES_PATTERN": "/php/{PHP_VERSION}/php-{MODULE_NAME}-{PHP_VERSION}.tar.gz",
     "PHP_MODULES_STRIP": true,
-    "PHP_MODULES": [],
+    "PHP_MODULES": ["gettext"],
     "PHP_EXTENSIONS": ["bz2", "zlib", "curl", "mcrypt"],
     "ZEND_EXTENSIONS": []
 }
